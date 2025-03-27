@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #eef2f3;
+        }
+        header {
+            background: #ff6600;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex: 1;
+            max-width: 1000px;
+            margin: 20px auto;
+            gap: 20px;
+        }
+        .sidebar, .content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar {
+            width: 30%;
+            background: #ffcc80;
+        }
+        .content {
+            width: 70%;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pagina Flexbox</h1>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Meniu</h3>
+            <ul>
+                <li><a href="#">Opțiune 1</a></li>
+                <li><a href="#">Opțiune 2</a></li>
+                <li><a href="#">Opțiune 3</a></li>
+            </ul>
+        </aside>
+        <section class="content">
+            <h2>Conținut Principal</h2>
+            <p>Aceasta este o pagină simplă cu un layout pe bază de Flexbox.</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Pagina Flexbox</p>
+    </footer>
+</body>
+</html>
